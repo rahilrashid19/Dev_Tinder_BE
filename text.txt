@@ -1,0 +1,53 @@
+/ /* order of routes matter
+// 1. app.use matches all http methods api calls
+
+// 2. ? in between a route makes the letter optional
+
+// 3. we can use + in our route like ab+c  -- abbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbc -- works
+// also we can use * in our route like ab*cd --- abAkjslksjdlksjlkdcd --- works
+
+// req.query gives us the query string
+// req.params gives us the query parameters
+
+// */
+// const data = require("../data.json");
+
+// const app = express();
+
+// app.get("/users", (req, res) => {
+//   res.json(data);
+// });
+
+// app.get("/users/:id", (req, res) => {
+//   const id = Number(req.params.id);
+
+//   const response = data.filter((user) => {
+//     return user.id === id;
+//   });
+
+//   res.status(200).send(response);
+// });
+
+// app.post("/users", (req, res) => {
+//   console.log("successfully created a user");
+//   res.send("data saved to the database");
+// });
+
+// app.delete("/users", (req, res) => {
+//   res.send("deleted the user successfully");
+// });
+
+// app.put("/users", (req, res) => {
+//   res.send("updated the user successfully");
+// });
+
+// app.patch("/users", (req, res) => {
+//   res.send("patched the user successfully");
+// });
+
+// app.listen(8080, () => {
+//   console.log("server listening on port 8080");
+// });
+
+
+  "mongodb+srv://rahil_rashid:df4lb4TOi30e3RgF@namastenodejs.g8sia.mongodb.net/test_DB"
